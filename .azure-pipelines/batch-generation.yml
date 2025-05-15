@@ -47,12 +47,14 @@ stages:
           targetType: inline
           pwsh: true
           script: |
-            $newBranch = "$(GenerationBranch)"
+            $date = Get-Date -Format "yy-MM-dd"
+            $generationBranch = "batch-generation/branch-$date-$(Build.BuildId)"
             $token = "$(GitHubToken)"
 
             $createBranchPath = Join-Path "$(Build.SourcesDirectory)" '.azure-pipelines' 'PipelineSteps' 'BatchGeneration' 'create-branch.ps1'
             # TODO: (Bernard) Change BaseBranch to main after test
-            & $createBranchPath -Owner 'Azure' -Repo 'azure-powershell' -BaseBranch 'bernard-pipeline-generation' -NewBranch $newBranch -Token $token
+            & $createBranchPath -Owner 'Azure' -Repo 'azure-powershell' -BaseBranch 'bernard-pipeline-generation' -NewBranch $generationBranch -Token $token
+            Write-Host "##vso[task.setvariable variable=GenerationBranch;isOutput=true]$generationBranch"
 
       - task: PowerShell@2
         name: mtrx
