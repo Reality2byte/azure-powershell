@@ -1,6 +1,6 @@
 ---
 Module Name: Az.Alb
-Module Guid: 9cd42152-6d04-457b-86ba-311fa3cf15a3
+Module Guid: bd560bb8-b2a8-4a6a-9368-9ed227645732
 Download Help Link: https://learn.microsoft.com/powershell/module/az.alb
 Help Version: 1.0.0.0
 Locale: en-US

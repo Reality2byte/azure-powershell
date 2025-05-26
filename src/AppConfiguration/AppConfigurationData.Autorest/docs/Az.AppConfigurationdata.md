@@ -1,6 +1,6 @@
 ---
 Module Name: Az.AppConfigurationdata
-Module Guid: 35b5598b-3f94-4285-9496-74783c6cbe02
+Module Guid: c9da5fbf-1511-4030-89f3-f7408e915b41
 Download Help Link: https://learn.microsoft.com/powershell/module/az.appconfigurationdata
 Help Version: 1.0.0.0
 Locale: en-US
@@ -30,7 +30,7 @@ Deletes a key-value.
 Unlocks a key-value.
 
 ### [Set-AzAppConfigurationKeyValue](Set-AzAppConfigurationKeyValue.md)
-Put a key-value.
+put a key-value.
 
 ### [Set-AzAppConfigurationLock](Set-AzAppConfigurationLock.md)
 Locks a key-value.

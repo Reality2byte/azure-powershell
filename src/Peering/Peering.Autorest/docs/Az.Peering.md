@@ -1,6 +1,6 @@
 ---
 Module Name: Az.Peering
-Module Guid: ce52109a-e66b-4a81-8749-638d97fc0a97
+Module Guid: 7fb90e5c-1fcd-4fda-956a-7e76f45f3073
 Download Help Link: https://learn.microsoft.com/powershell/module/az.peering
 Help Version: 1.0.0.0
 Locale: en-US

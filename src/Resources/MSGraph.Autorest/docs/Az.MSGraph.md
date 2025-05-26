@@ -1,6 +1,6 @@
 ---
 Module Name: Az.MSGraph
-Module Guid: 9c1e9bcf-5175-4d03-99c7-a7f2f7040f46
+Module Guid: 56e1be46-c64e-4197-a378-6da649fde636
 Download Help Link: https://learn.microsoft.com/powershell/module/az.msgraph
 Help Version: 1.0.0.0
 Locale: en-US

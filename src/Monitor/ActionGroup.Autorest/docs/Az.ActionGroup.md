@@ -1,6 +1,6 @@
 ---
 Module Name: Az.ActionGroup
-Module Guid: c9f47937-c60a-4575-b669-442455ef6728
+Module Guid: 09004407-28b6-4b32-8278-0131a97ad06c
 Download Help Link: https://learn.microsoft.com/powershell/module/az.actiongroup
 Help Version: 1.0.0.0
 Locale: en-US

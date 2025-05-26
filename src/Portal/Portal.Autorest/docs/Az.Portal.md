@@ -1,6 +1,6 @@
 ---
 Module Name: Az.Portal
-Module Guid: 31aca27a-d75c-4e24-9a57-ed8c410db168
+Module Guid: 821e8877-d528-4c81-8492-04ab1547a777
 Download Help Link: https://learn.microsoft.com/powershell/module/az.portal
 Help Version: 1.0.0.0
 Locale: en-US

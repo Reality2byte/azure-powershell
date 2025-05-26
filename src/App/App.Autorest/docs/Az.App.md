@@ -1,6 +1,6 @@
 ---
 Module Name: Az.App
-Module Guid: d26b4cc7-1502-410b-9c3d-a553c0d2d624
+Module Guid: f79ca4b3-d878-4b1f-bf73-9f54e8ebf39e
 Download Help Link: https://learn.microsoft.com/powershell/module/az.app
 Help Version: 1.0.0.0
 Locale: en-US
