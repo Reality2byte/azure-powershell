@@ -1,6 +1,6 @@
 ---
 Module Name: Az.FluidRelay
-Module Guid: 952b776b-10b6-4b4a-8200-9bf09045177d
+Module Guid: dcc93cc8-277b-41b1-9695-6522366d94a6
 Download Help Link: https://learn.microsoft.com/powershell/module/az.fluidrelay
 Help Version: 1.0.0.0
 Locale: en-US

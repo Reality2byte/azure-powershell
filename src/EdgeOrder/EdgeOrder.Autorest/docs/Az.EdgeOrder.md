@@ -1,6 +1,6 @@
 ---
 Module Name: Az.EdgeOrder
-Module Guid: b62edb67-a8ef-4473-b452-8e344430234a
+Module Guid: 3cd14ccd-1a53-46b6-8fd7-88eb1d74c2dc
 Download Help Link: https://learn.microsoft.com/powershell/module/az.edgeorder
 Help Version: 1.0.0.0
 Locale: en-US

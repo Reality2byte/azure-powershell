@@ -1,6 +1,6 @@
 ---
 Module Name: Az.GraphServices
-Module Guid: 48f1f0e6-4d7a-456b-8027-82676bc09900
+Module Guid: 1fd2d5b7-bc73-4692-8f7b-817537763a42
 Download Help Link: https://learn.microsoft.com/powershell/module/az.graphservices
 Help Version: 1.0.0.0
 Locale: en-US

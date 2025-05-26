@@ -1,6 +1,6 @@
 ---
 Module Name: Az.ServiceBus
-Module Guid: 15201554-4ce4-4bba-9029-e89ff5c6c83f
+Module Guid: e47faab3-63b0-42b3-98fd-3ad7f72dfb8c
 Download Help Link: https://learn.microsoft.com/powershell/module/az.servicebus
 Help Version: 1.0.0.0
 Locale: en-US

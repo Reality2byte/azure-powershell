@@ -1,6 +1,6 @@
 ---
 Module Name: Az.ImportExport
-Module Guid: d08f17d5-5c73-43ef-b250-38bcfe0330c5
+Module Guid: c9f7140f-67d9-44b7-a484-08fda7ecacfe
 Download Help Link: https://learn.microsoft.com/powershell/module/az.importexport
 Help Version: 1.0.0.0
 Locale: en-US

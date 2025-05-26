@@ -1,6 +1,6 @@
 ---
 Module Name: Az.DynatraceObservability
-Module Guid: f889aadf-56ba-485c-8077-283219e39439
+Module Guid: f2900e6c-e38f-4038-a750-c34ef6c64dc2
 Download Help Link: https://learn.microsoft.com/powershell/module/az.dynatraceobservability
 Help Version: 1.0.0.0
 Locale: en-US

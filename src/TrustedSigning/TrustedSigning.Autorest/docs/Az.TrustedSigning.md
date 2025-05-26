@@ -1,6 +1,6 @@
 ---
 Module Name: Az.TrustedSigning
-Module Guid: 12df3fe9-da2f-40ef-b520-aa2ad8aee1c1
+Module Guid: ad0e2e1d-7ac5-48c5-b77e-73a699105dc5
 Download Help Link: https://learn.microsoft.com/powershell/module/az.trustedsigning
 Help Version: 1.0.0.0
 Locale: en-US

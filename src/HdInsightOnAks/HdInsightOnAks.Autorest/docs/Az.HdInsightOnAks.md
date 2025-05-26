@@ -1,6 +1,6 @@
 ---
 Module Name: Az.HdInsightOnAks
-Module Guid: bf79ab40-9db4-4db8-881e-5568e19978ee
+Module Guid: 6793752b-6a07-4682-a68d-4e17c406d81a
 Download Help Link: https://learn.microsoft.com/powershell/module/az.hdinsightonaks
 Help Version: 1.0.0.0
 Locale: en-US
