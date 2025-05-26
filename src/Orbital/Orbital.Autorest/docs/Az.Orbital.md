@@ -1,6 +1,6 @@
 ---
 Module Name: Az.Orbital
-Module Guid: da3f3c81-b8f0-4648-9b05-4afd458a4b16
+Module Guid: bf5a612e-3055-4b3f-befa-adca3f2d4e14
 Download Help Link: https://learn.microsoft.com/powershell/module/az.orbital
 Help Version: 1.0.0.0
 Locale: en-US

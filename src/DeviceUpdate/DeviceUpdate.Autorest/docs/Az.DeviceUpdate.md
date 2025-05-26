@@ -1,6 +1,6 @@
 ---
 Module Name: Az.DeviceUpdate
-Module Guid: 7ccf1a98-2bbc-4c3f-8f8f-ad4c17fc1625
+Module Guid: c2a69103-bd96-40d7-9f43-f9014e90f033
 Download Help Link: https://learn.microsoft.com/powershell/module/az.deviceupdate
 Help Version: 1.0.0.0
 Locale: en-US

@@ -1,6 +1,6 @@
 ---
 Module Name: Az.ConnectedMachine
-Module Guid: 259a0542-8329-4b9e-8f72-dab0efc583e9
+Module Guid: 5b67859c-cc50-4b52-a238-497c5bf2e5b5
 Download Help Link: https://learn.microsoft.com/powershell/module/az.connectedmachine
 Help Version: 1.0.0.0
 Locale: en-US

@@ -1,6 +1,6 @@
 ---
 Module Name: Az.WindowsIotServices
-Module Guid: b8c0fd61-5572-4480-9641-523c06ddb44c
+Module Guid: 621cb141-9457-4dab-80f3-6e587ba4bb33
 Download Help Link: https://learn.microsoft.com/powershell/module/az.windowsiotservices
 Help Version: 1.0.0.0
 Locale: en-US

@@ -1,6 +1,6 @@
 ---
 Module Name: Az.LambdaTest
-Module Guid: 27bc7a2c-255c-4683-8abe-09ba59024a2d
+Module Guid: 5c319414-146a-459d-9e0f-09a66f435c77
 Download Help Link: https://learn.microsoft.com/powershell/module/az.lambdatest
 Help Version: 1.0.0.0
 Locale: en-US
