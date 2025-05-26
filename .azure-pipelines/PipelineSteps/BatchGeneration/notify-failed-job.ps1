@@ -8,7 +8,8 @@ Import-Module $utilFilePath -Force
 $batchGenSubscribers = @(
     "bernardpan@microsoft.com",
     "xidi@microsoft.com",
-    "yabhu@microsoft.com"
+    "yabhu@microsoft.com",
+    "yeliu@microsoft.com"
 )
 $receivers = $batchGenSubscribers -join ","
 
