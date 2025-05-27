@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-create a WorkloadNetworkDnsService
+Create a WorkloadNetworkDnsService
 .Description
-create a WorkloadNetworkDnsService
+Create a WorkloadNetworkDnsService
 .Example
 {{ Add code here }}
 .Example
