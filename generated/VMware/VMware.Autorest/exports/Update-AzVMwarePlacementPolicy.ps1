@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-update a PlacementPolicy
+Update a PlacementPolicy
 .Description
-update a PlacementPolicy
+Update a PlacementPolicy
 .Example
 Update-AzVMwarePlacementPolicy -ClusterName cluster1 -Name policy1 -PrivateCloudName cloud1 -ResourceGroupName group1 -State 'Enabled'
 .Example

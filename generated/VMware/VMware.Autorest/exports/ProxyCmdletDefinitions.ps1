@@ -2885,9 +2885,9 @@ end {
 
 <#
 .Synopsis
-create a ExpressRouteAuthorization
+Create a ExpressRouteAuthorization
 .Description
-create a ExpressRouteAuthorization
+Create a ExpressRouteAuthorization
 .Example
 New-AzVMwareAuthorization -Name azps_test_authorization -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 
@@ -3169,9 +3169,9 @@ end {
 
 <#
 .Synopsis
-create a CloudLink
+Create a CloudLink
 .Description
-create a CloudLink
+Create a CloudLink
 .Example
 New-AzVMwareCloudLink -Name azps_test_cloudlink -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group -LinkedCloud "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/azps_test_group2/providers/Microsoft.AVS/privateClouds/azps_test_cloud2/"
 
@@ -3453,9 +3453,9 @@ end {
 
 <#
 .Synopsis
-create a Cluster
+Create a Cluster
 .Description
-create a Cluster
+Create a Cluster
 .Example
 New-AzVMwareCluster -Name azps_test_cluster -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group -ClusterSize 3 -SkuName av36
 
@@ -3786,9 +3786,9 @@ end {
 
 <#
 .Synopsis
-create a Datastore
+Create a Datastore
 .Description
-create a Datastore
+Create a Datastore
 .Example
 New-AzVMwareDatastore -ClusterName azps_test_cluster -Name azps_test_datastore -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group -NetAppVolumeId "/subscriptions/11111111-1111-1111-1111-111111111111/resourceGroups/azps_test_group/providers/Microsoft.NetApp/netAppAccounts/NetAppAccount1/capacityPools/CapacityPool1/volumes/NFSVol1"
 
@@ -4137,9 +4137,9 @@ end {
 
 <#
 .Synopsis
-create a GlobalReachConnection
+Create a GlobalReachConnection
 .Description
-create a GlobalReachConnection
+Create a GlobalReachConnection
 .Example
 New-AzVMwareGlobalReachConnection -Name azps_test_grc -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group -AuthorizationKey "df530ffb-5a57-4437-a3eb-08e4c73ce011" -PeerExpressRouteResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/tnt16-cust-mp01-mock01/providers/Microsoft.Network/expressRouteCircuits/tnt16-cust-mp01-mock01-er"
 
@@ -4433,9 +4433,9 @@ end {
 
 <#
 .Synopsis
-create a IscsiPath
+Create a IscsiPath
 .Description
-create a IscsiPath
+Create a IscsiPath
 .Example
 New-AzVMwareIscsiPath -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 
@@ -4675,9 +4675,9 @@ end {
 
 <#
 .Synopsis
-create a PlacementPolicy
+Create a PlacementPolicy
 .Description
-create a PlacementPolicy
+Create a PlacementPolicy
 .Example
 $abc = New-AzVMwareVMPlacementPolicyPropertyObject -AffinityType 'Affinity' -VMMember @{"test"="test"}
 New-AzVMwarePlacementPolicy -ClusterName cluster1 -Name policy1 -PrivateCloudName cloud1 -ResourceGroupName group1 -Property $abc
@@ -7938,9 +7938,9 @@ end {
 
 <#
 .Synopsis
-update a ExpressRouteAuthorization
+Update a ExpressRouteAuthorization
 .Description
-update a ExpressRouteAuthorization
+Update a ExpressRouteAuthorization
 .Example
 Update-AzVMwareAuthorization -Name azps_test_authorization -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 
@@ -8222,9 +8222,9 @@ end {
 
 <#
 .Synopsis
-update a CloudLink
+Update a CloudLink
 .Description
-update a CloudLink
+Update a CloudLink
 .Example
 Update-AzVMwareCloudLink -Name azps_test_cloudlink -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 
@@ -8506,9 +8506,9 @@ end {
 
 <#
 .Synopsis
-update a Cluster
+Update a Cluster
 .Description
-update a Cluster
+Update a Cluster
 .Example
 Update-AzVMwareCluster -Name azps_test_cluster -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group -ClusterSize 4
 .Example
@@ -8835,9 +8835,9 @@ end {
 
 <#
 .Synopsis
-update a Datastore
+Update a Datastore
 .Description
-update a Datastore
+Update a Datastore
 .Example
 Update-AzVMwareDatastore -ClusterName azps_test_cluster -Name azps_test_datastore -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 
@@ -9186,9 +9186,9 @@ end {
 
 <#
 .Synopsis
-update a GlobalReachConnection
+Update a GlobalReachConnection
 .Description
-update a GlobalReachConnection
+Update a GlobalReachConnection
 .Example
 Update-AzVMwareGlobalReachConnection -Name azps_test_grc -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 
@@ -9482,9 +9482,9 @@ end {
 
 <#
 .Synopsis
-update a IscsiPath
+Update a IscsiPath
 .Description
-update a IscsiPath
+Update a IscsiPath
 .Example
 Update-AzVMwareIscsiPath -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 
@@ -9718,9 +9718,9 @@ end {
 
 <#
 .Synopsis
-update a PlacementPolicy
+Update a PlacementPolicy
 .Description
-update a PlacementPolicy
+Update a PlacementPolicy
 .Example
 Update-AzVMwarePlacementPolicy -ClusterName cluster1 -Name policy1 -PrivateCloudName cloud1 -ResourceGroupName group1 -State 'Enabled'
 .Example
@@ -10075,9 +10075,9 @@ end {
 
 <#
 .Synopsis
-update a PrivateCloud
+Update a PrivateCloud
 .Description
-update a PrivateCloud
+Update a PrivateCloud
 .Example
 Update-AzVMwarePrivateCloud -Name azps_test_cloud -ResourceGroupName azps_test_group
 .Example

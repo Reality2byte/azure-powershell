@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-create a OrganizationResource
+Create a OrganizationResource
 .Description
-create a OrganizationResource
+Create a OrganizationResource
 .Example
 New-AzNeonPostgresOrganization -Name "almasTestNeonPS6" -ResourceGroupName "NeonDemoRG" -Location "centraluseuap" -SubscriptionId "5d9a6cc3-4e60-4b41-be79-d28f0a01074e" -CompanyDetailBusinessPhone "+1234567890" -CompanyDetailCompanyName "DemoCompany" -CompanyDetailCountry "USA" -CompanyDetailDomain "demo.com" -CompanyDetailNumberOfEmployee 500 -CompanyDetailOfficeAddress "1234 Azure Ave" -MarketplaceDetailSubscriptionId "yxmkfivp" -MarketplaceDetailSubscriptionStatus "PendingFulfillmentStart" -OfferDetailOfferId "neon_test" -OfferDetailPlanId "neon_test_1" -OfferDetailPlanName "Neon Serverless Postgres - Free (Test_Liftr)" -OfferDetailPublisherId "neon1722366567200" -OfferDetailTermId "gmz7xq9ge3py" -OfferDetailTermUnit "P1M" -PartnerOrganizationPropertyOrganizationId "org12345" -PartnerOrganizationPropertyOrganizationName "PartnerOrg6" -SingleSignOnPropertyAadDomain @("partnerorg.com") -SingleSignOnPropertyEnterpriseAppId "app12345" -SingleSignOnPropertySingleSignOnState "Enable" -SingleSignOnPropertySingleSignOnUrl "https://sso.partnerorg.com" -UserDetailEmailAddress "khanalmas@microsoft.com" -UserDetailFirstName "Almas" -UserDetailLastName "Khan" -UserDetailPhoneNumber "+1234567890" -UserDetailUpn "khanalmas_microsoft.com#EXT#@qumulotesttenant2.onmicrosoft.com"
 
@@ -300,6 +300,15 @@ begin {
         }
         $parameterSet = $PSCmdlet.ParameterSetName
 
+        $testPlayback = $false
+        $PSBoundParameters['HttpPipelinePrepend'] | Foreach-Object { if ($_) { $testPlayback = $testPlayback -or ('Microsoft.Azure.PowerShell.Cmdlets.NeonPostgres.Runtime.PipelineMock' -eq $_.Target.GetType().FullName -and 'Playback' -eq $_.Target.Mode) } }
+
+        $context = Get-AzContext
+        if (-not $context -and -not $testPlayback) {
+            Write-Error "No Azure login detected. Please run 'Connect-AzAccount' to log in."
+            exit
+        }
+
         if ($null -eq [Microsoft.WindowsAzure.Commands.Utilities.Common.AzurePSCmdlet]::PowerShellVersion) {
             [Microsoft.WindowsAzure.Commands.Utilities.Common.AzurePSCmdlet]::PowerShellVersion = $PSVersionTable.PSVersion.ToString()
         }         
@@ -323,8 +332,6 @@ begin {
             CreateViaJsonString = 'Az.NeonPostgres.private\New-AzNeonPostgresOrganization_CreateViaJsonString';
         }
         if (('CreateExpanded', 'CreateViaJsonFilePath', 'CreateViaJsonString') -contains $parameterSet -and -not $PSBoundParameters.ContainsKey('SubscriptionId') ) {
-            $testPlayback = $false
-            $PSBoundParameters['HttpPipelinePrepend'] | Foreach-Object { if ($_) { $testPlayback = $testPlayback -or ('Microsoft.Azure.PowerShell.Cmdlets.NeonPostgres.Runtime.PipelineMock' -eq $_.Target.GetType().FullName -and 'Playback' -eq $_.Target.Mode) } }
             if ($testPlayback) {
                 $PSBoundParameters['SubscriptionId'] = . (Join-Path $PSScriptRoot '..' 'utils' 'Get-SubscriptionIdTestSafe.ps1')
             } else {
@@ -338,6 +345,9 @@ begin {
             [Microsoft.WindowsAzure.Commands.Utilities.Common.AzurePSCmdlet]::PromptedPreviewMessageCmdlets.Enqueue($MyInvocation.MyCommand.Name)
         }
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
+        if ($wrappedCmd -eq $null) {
+            $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Function)
+        }
         $scriptCmd = {& $wrappedCmd @PSBoundParameters}
         $steppablePipeline = $scriptCmd.GetSteppablePipeline($MyInvocation.CommandOrigin)
         $steppablePipeline.Begin($PSCmdlet)

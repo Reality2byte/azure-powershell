@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-update a PrivateCloud
+Update a PrivateCloud
 .Description
-update a PrivateCloud
+Update a PrivateCloud
 .Example
 Update-AzVMwarePrivateCloud -Name azps_test_cloud -ResourceGroupName azps_test_group
 .Example
