@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-update a Datastore
+Update a Datastore
 .Description
-update a Datastore
+Update a Datastore
 .Example
 Update-AzVMwareDatastore -ClusterName azps_test_cluster -Name azps_test_datastore -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 

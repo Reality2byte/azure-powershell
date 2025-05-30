@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-update a IscsiPath
+Update a IscsiPath
 .Description
-update a IscsiPath
+Update a IscsiPath
 .Example
 Update-AzVMwareIscsiPath -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 

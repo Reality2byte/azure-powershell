@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-create a Addon
+Create a Addon
 .Description
-create a Addon
+Create a Addon
 .Example
 $data = New-AzVMwareAddonVrPropertyObject -VrsCount 2
 New-AzVMwareAddon -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group -Property $data

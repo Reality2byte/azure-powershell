@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-create a ScriptExecution
+Create a ScriptExecution
 .Description
-create a ScriptExecution
+Create a ScriptExecution
 .Example
 {{ Add code here }}
 .Example

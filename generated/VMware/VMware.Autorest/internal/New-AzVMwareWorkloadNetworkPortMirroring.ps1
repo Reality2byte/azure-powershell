@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-create a WorkloadNetworkPortMirroring
+Create a WorkloadNetworkPortMirroring
 .Description
-create a WorkloadNetworkPortMirroring
+Create a WorkloadNetworkPortMirroring
 .Example
 {{ Add code here }}
 .Example

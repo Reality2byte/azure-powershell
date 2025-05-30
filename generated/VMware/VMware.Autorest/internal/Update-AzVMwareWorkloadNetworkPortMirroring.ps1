@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-update a WorkloadNetworkPortMirroring
+Update a WorkloadNetworkPortMirroring
 .Description
-update a WorkloadNetworkPortMirroring
+Update a WorkloadNetworkPortMirroring
 .Example
 {{ Add code here }}
 .Example

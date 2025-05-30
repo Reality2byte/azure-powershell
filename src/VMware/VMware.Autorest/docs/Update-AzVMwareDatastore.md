@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-AzVMwareDatastore
 
 ## SYNOPSIS
-update a Datastore
+Update a Datastore
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ Update-AzVMwareDatastore -ClusterName <String> -Name <String> -PrivateCloudInput
 ```
 
 ## DESCRIPTION
-update a Datastore
+Update a Datastore
 
 ## EXAMPLES
 
