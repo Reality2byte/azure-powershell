@@ -1,6 +1,6 @@
 ---
 Module Name: Az.DataBoundary
-Module Guid: c0d70364-96af-43cf-a3ca-76edff8b31b7
+Module Guid: 850409bd-027c-43e6-849b-1ecad4d95f13
 Download Help Link: https://learn.microsoft.com/powershell/module/az.databoundary
 Help Version: 1.0.0.0
 Locale: en-US

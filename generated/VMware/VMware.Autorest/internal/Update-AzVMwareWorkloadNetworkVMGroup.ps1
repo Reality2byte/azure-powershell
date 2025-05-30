@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-update a WorkloadNetworkVMGroup
+Update a WorkloadNetworkVMGroup
 .Description
-update a WorkloadNetworkVMGroup
+Update a WorkloadNetworkVMGroup
 .Example
 {{ Add code here }}
 .Example

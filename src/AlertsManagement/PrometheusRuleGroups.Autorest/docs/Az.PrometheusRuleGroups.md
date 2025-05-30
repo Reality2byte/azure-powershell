@@ -1,6 +1,6 @@
 ---
 Module Name: Az.PrometheusRuleGroups
-Module Guid: 6ab881a6-6f81-4bd0-acc0-48ac742741b3
+Module Guid: 8c65dd14-b045-4868-a6c5-dad2834c5b95
 Download Help Link: https://learn.microsoft.com/powershell/module/az.prometheusrulegroups
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,7 +15,7 @@ Microsoft Azure PowerShell: PrometheusRuleGroups cmdlets
 Retrieve a Prometheus rule group definition.
 
 ### [New-AzPrometheusRuleGroup](New-AzPrometheusRuleGroup.md)
-create a Prometheus rule group definition.
+Create a Prometheus rule group definition.
 
 ### [New-AzPrometheusRuleGroupActionObject](New-AzPrometheusRuleGroupActionObject.md)
 Create an in-memory object for PrometheusRuleGroupAction.
@@ -27,5 +27,5 @@ Create an in-memory object for PrometheusRule.
 Delete a Prometheus rule group definition.
 
 ### [Update-AzPrometheusRuleGroup](Update-AzPrometheusRuleGroup.md)
-update an Prometheus rule group definition.
+Update an Prometheus rule group definition.
 

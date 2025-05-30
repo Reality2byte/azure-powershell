@@ -17781,6 +17781,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
         /// <param name="resourceGroupName">The name of the resource group. The name is case insensitive.</param>
         /// <param name="privateCloudName">Name of the private cloud</param>
         /// <param name="onNoContent">a delegate that is called when the remote service returns 204 (NoContent).</param>
+        /// <param name="onOk">a delegate that is called when the remote service returns 200 (OK).</param>
         /// <param name="onDefault">a delegate that is called when the remote service returns default (any response code not handled
         /// elsewhere).</param>
         /// <param name="eventListener">an <see cref="Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener" /> instance that will receive events.</param>
@@ -17788,7 +17789,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
         /// <returns>
         /// A <see cref="global::System.Threading.Tasks.Task" /> that will be complete when handling of the response is completed.
         /// </returns>
-        public async global::System.Threading.Tasks.Task PrivateCloudsRotateNsxtPassword(string subscriptionId, string resourceGroupName, string privateCloudName, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender)
+        public async global::System.Threading.Tasks.Task PrivateCloudsRotateNsxtPassword(string subscriptionId, string resourceGroupName, string privateCloudName, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender)
         {
             var apiVersion = @"2023-09-01";
             // Constant Parameters
@@ -17816,13 +17817,14 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
 
                 await eventListener.Signal(Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.Events.HeaderParametersAdded); if( eventListener.Token.IsCancellationRequested ) { return; }
                 // make the call
-                await this.PrivateCloudsRotateNsxtPassword_Call (request, onNoContent,onDefault,eventListener,sender);
+                await this.PrivateCloudsRotateNsxtPassword_Call (request, onNoContent,onOk,onDefault,eventListener,sender);
             }
         }
 
         /// <summary>Rotate the NSX-T Manager password</summary>
         /// <param name="viaIdentity"></param>
         /// <param name="onNoContent">a delegate that is called when the remote service returns 204 (NoContent).</param>
+        /// <param name="onOk">a delegate that is called when the remote service returns 200 (OK).</param>
         /// <param name="onDefault">a delegate that is called when the remote service returns default (any response code not handled
         /// elsewhere).</param>
         /// <param name="eventListener">an <see cref="Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener" /> instance that will receive events.</param>
@@ -17830,7 +17832,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
         /// <returns>
         /// A <see cref="global::System.Threading.Tasks.Task" /> that will be complete when handling of the response is completed.
         /// </returns>
-        public async global::System.Threading.Tasks.Task PrivateCloudsRotateNsxtPasswordViaIdentity(global::System.String viaIdentity, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender)
+        public async global::System.Threading.Tasks.Task PrivateCloudsRotateNsxtPasswordViaIdentity(global::System.String viaIdentity, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender)
         {
             var apiVersion = @"2023-09-01";
             // Constant Parameters
@@ -17870,13 +17872,14 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
 
                 await eventListener.Signal(Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.Events.HeaderParametersAdded); if( eventListener.Token.IsCancellationRequested ) { return; }
                 // make the call
-                await this.PrivateCloudsRotateNsxtPassword_Call (request, onNoContent,onDefault,eventListener,sender);
+                await this.PrivateCloudsRotateNsxtPassword_Call (request, onNoContent,onOk,onDefault,eventListener,sender);
             }
         }
 
         /// <summary>Actual wire call for <see cref= "PrivateCloudsRotateNsxtPassword" /> method.</summary>
         /// <param name="request">the prepared HttpRequestMessage to send.</param>
         /// <param name="onNoContent">a delegate that is called when the remote service returns 204 (NoContent).</param>
+        /// <param name="onOk">a delegate that is called when the remote service returns 200 (OK).</param>
         /// <param name="onDefault">a delegate that is called when the remote service returns default (any response code not handled
         /// elsewhere).</param>
         /// <param name="eventListener">an <see cref="Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener" /> instance that will receive events.</param>
@@ -17884,7 +17887,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
         /// <returns>
         /// A <see cref="global::System.Threading.Tasks.Task" /> that will be complete when handling of the response is completed.
         /// </returns>
-        internal async global::System.Threading.Tasks.Task PrivateCloudsRotateNsxtPassword_Call(global::System.Net.Http.HttpRequestMessage request, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender)
+        internal async global::System.Threading.Tasks.Task PrivateCloudsRotateNsxtPassword_Call(global::System.Net.Http.HttpRequestMessage request, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender)
         {
             using( NoSynchronizationContext )
             {
@@ -17993,6 +17996,12 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
 
                     switch ( _response.StatusCode )
                     {
+                        case global::System.Net.HttpStatusCode.OK:
+                        {
+                            await eventListener.Signal(Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.Events.BeforeResponseDispatch, _response); if( eventListener.Token.IsCancellationRequested ) { return; }
+                            await onOk(_response);
+                            break;
+                        }
                         case global::System.Net.HttpStatusCode.NoContent:
                         {
                             await eventListener.Signal(Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.Events.BeforeResponseDispatch, _response); if( eventListener.Token.IsCancellationRequested ) { return; }
@@ -18047,6 +18056,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
         /// <param name="resourceGroupName">The name of the resource group. The name is case insensitive.</param>
         /// <param name="privateCloudName">Name of the private cloud</param>
         /// <param name="onNoContent">a delegate that is called when the remote service returns 204 (NoContent).</param>
+        /// <param name="onOk">a delegate that is called when the remote service returns 200 (OK).</param>
         /// <param name="onDefault">a delegate that is called when the remote service returns default (any response code not handled
         /// elsewhere).</param>
         /// <param name="eventListener">an <see cref="Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener" /> instance that will receive events.</param>
@@ -18054,7 +18064,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
         /// <returns>
         /// A <see cref="global::System.Threading.Tasks.Task" /> that will be complete when handling of the response is completed.
         /// </returns>
-        public async global::System.Threading.Tasks.Task PrivateCloudsRotateVcenterPassword(string subscriptionId, string resourceGroupName, string privateCloudName, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender)
+        public async global::System.Threading.Tasks.Task PrivateCloudsRotateVcenterPassword(string subscriptionId, string resourceGroupName, string privateCloudName, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender)
         {
             var apiVersion = @"2023-09-01";
             // Constant Parameters
@@ -18082,13 +18092,14 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
 
                 await eventListener.Signal(Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.Events.HeaderParametersAdded); if( eventListener.Token.IsCancellationRequested ) { return; }
                 // make the call
-                await this.PrivateCloudsRotateVcenterPassword_Call (request, onNoContent,onDefault,eventListener,sender);
+                await this.PrivateCloudsRotateVcenterPassword_Call (request, onNoContent,onOk,onDefault,eventListener,sender);
             }
         }
 
         /// <summary>Rotate the vCenter password</summary>
         /// <param name="viaIdentity"></param>
         /// <param name="onNoContent">a delegate that is called when the remote service returns 204 (NoContent).</param>
+        /// <param name="onOk">a delegate that is called when the remote service returns 200 (OK).</param>
         /// <param name="onDefault">a delegate that is called when the remote service returns default (any response code not handled
         /// elsewhere).</param>
         /// <param name="eventListener">an <see cref="Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener" /> instance that will receive events.</param>
@@ -18096,7 +18107,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
         /// <returns>
         /// A <see cref="global::System.Threading.Tasks.Task" /> that will be complete when handling of the response is completed.
         /// </returns>
-        public async global::System.Threading.Tasks.Task PrivateCloudsRotateVcenterPasswordViaIdentity(global::System.String viaIdentity, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender)
+        public async global::System.Threading.Tasks.Task PrivateCloudsRotateVcenterPasswordViaIdentity(global::System.String viaIdentity, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender)
         {
             var apiVersion = @"2023-09-01";
             // Constant Parameters
@@ -18136,13 +18147,14 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
 
                 await eventListener.Signal(Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.Events.HeaderParametersAdded); if( eventListener.Token.IsCancellationRequested ) { return; }
                 // make the call
-                await this.PrivateCloudsRotateVcenterPassword_Call (request, onNoContent,onDefault,eventListener,sender);
+                await this.PrivateCloudsRotateVcenterPassword_Call (request, onNoContent,onOk,onDefault,eventListener,sender);
             }
         }
 
         /// <summary>Actual wire call for <see cref= "PrivateCloudsRotateVcenterPassword" /> method.</summary>
         /// <param name="request">the prepared HttpRequestMessage to send.</param>
         /// <param name="onNoContent">a delegate that is called when the remote service returns 204 (NoContent).</param>
+        /// <param name="onOk">a delegate that is called when the remote service returns 200 (OK).</param>
         /// <param name="onDefault">a delegate that is called when the remote service returns default (any response code not handled
         /// elsewhere).</param>
         /// <param name="eventListener">an <see cref="Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener" /> instance that will receive events.</param>
@@ -18150,7 +18162,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
         /// <returns>
         /// A <see cref="global::System.Threading.Tasks.Task" /> that will be complete when handling of the response is completed.
         /// </returns>
-        internal async global::System.Threading.Tasks.Task PrivateCloudsRotateVcenterPassword_Call(global::System.Net.Http.HttpRequestMessage request, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender)
+        internal async global::System.Threading.Tasks.Task PrivateCloudsRotateVcenterPassword_Call(global::System.Net.Http.HttpRequestMessage request, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender)
         {
             using( NoSynchronizationContext )
             {
@@ -18259,6 +18271,12 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
 
                     switch ( _response.StatusCode )
                     {
+                        case global::System.Net.HttpStatusCode.OK:
+                        {
+                            await eventListener.Signal(Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.Events.BeforeResponseDispatch, _response); if( eventListener.Token.IsCancellationRequested ) { return; }
+                            await onOk(_response);
+                            break;
+                        }
                         case global::System.Net.HttpStatusCode.NoContent:
                         {
                             await eventListener.Signal(Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.Events.BeforeResponseDispatch, _response); if( eventListener.Token.IsCancellationRequested ) { return; }
@@ -22778,6 +22796,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
         /// <param name="clusterName">Name of the cluster</param>
         /// <param name="virtualMachineId">ID of the virtual machine.</param>
         /// <param name="body">The body type of the operation request.</param>
+        /// <param name="onOk">a delegate that is called when the remote service returns 200 (OK).</param>
         /// <param name="onDefault">a delegate that is called when the remote service returns default (any response code not handled
         /// elsewhere).</param>
         /// <param name="eventListener">an <see cref="Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener" /> instance that will receive events.</param>
@@ -22786,7 +22805,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
         /// <returns>
         /// A <see cref="global::System.Threading.Tasks.Task" /> that will be complete when handling of the response is completed.
         /// </returns>
-        public async global::System.Threading.Tasks.Task VirtualMachinesRestrictMovement(string subscriptionId, string resourceGroupName, string privateCloudName, string clusterName, string virtualMachineId, Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IVirtualMachineRestrictMovement body, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.SerializationMode serializationMode = Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.SerializationMode.IncludeCreate|Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.SerializationMode.IncludeUpdate)
+        public async global::System.Threading.Tasks.Task VirtualMachinesRestrictMovement(string subscriptionId, string resourceGroupName, string privateCloudName, string clusterName, string virtualMachineId, Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IVirtualMachineRestrictMovement body, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.SerializationMode serializationMode = Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.SerializationMode.IncludeCreate|Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.SerializationMode.IncludeUpdate)
         {
             var apiVersion = @"2023-09-01";
             // Constant Parameters
@@ -22822,13 +22841,14 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
                 request.Content.Headers.ContentType = global::System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
                 await eventListener.Signal(Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.Events.BodyContentSet); if( eventListener.Token.IsCancellationRequested ) { return; }
                 // make the call
-                await this.VirtualMachinesRestrictMovement_Call (request, onDefault,eventListener,sender);
+                await this.VirtualMachinesRestrictMovement_Call (request, onOk,onDefault,eventListener,sender);
             }
         }
 
         /// <summary>Enable or disable DRS-driven VM movement restriction</summary>
         /// <param name="viaIdentity"></param>
         /// <param name="body">The body type of the operation request.</param>
+        /// <param name="onOk">a delegate that is called when the remote service returns 200 (OK).</param>
         /// <param name="onDefault">a delegate that is called when the remote service returns default (any response code not handled
         /// elsewhere).</param>
         /// <param name="eventListener">an <see cref="Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener" /> instance that will receive events.</param>
@@ -22837,7 +22857,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
         /// <returns>
         /// A <see cref="global::System.Threading.Tasks.Task" /> that will be complete when handling of the response is completed.
         /// </returns>
-        public async global::System.Threading.Tasks.Task VirtualMachinesRestrictMovementViaIdentity(global::System.String viaIdentity, Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IVirtualMachineRestrictMovement body, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.SerializationMode serializationMode = Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.SerializationMode.IncludeCreate|Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.SerializationMode.IncludeUpdate)
+        public async global::System.Threading.Tasks.Task VirtualMachinesRestrictMovementViaIdentity(global::System.String viaIdentity, Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IVirtualMachineRestrictMovement body, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.SerializationMode serializationMode = Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.SerializationMode.IncludeCreate|Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.SerializationMode.IncludeUpdate)
         {
             var apiVersion = @"2023-09-01";
             // Constant Parameters
@@ -22887,12 +22907,13 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
                 request.Content.Headers.ContentType = global::System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
                 await eventListener.Signal(Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.Events.BodyContentSet); if( eventListener.Token.IsCancellationRequested ) { return; }
                 // make the call
-                await this.VirtualMachinesRestrictMovement_Call (request, onDefault,eventListener,sender);
+                await this.VirtualMachinesRestrictMovement_Call (request, onOk,onDefault,eventListener,sender);
             }
         }
 
         /// <summary>Actual wire call for <see cref= "VirtualMachinesRestrictMovement" /> method.</summary>
         /// <param name="request">the prepared HttpRequestMessage to send.</param>
+        /// <param name="onOk">a delegate that is called when the remote service returns 200 (OK).</param>
         /// <param name="onDefault">a delegate that is called when the remote service returns default (any response code not handled
         /// elsewhere).</param>
         /// <param name="eventListener">an <see cref="Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener" /> instance that will receive events.</param>
@@ -22900,7 +22921,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
         /// <returns>
         /// A <see cref="global::System.Threading.Tasks.Task" /> that will be complete when handling of the response is completed.
         /// </returns>
-        internal async global::System.Threading.Tasks.Task VirtualMachinesRestrictMovement_Call(global::System.Net.Http.HttpRequestMessage request, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender)
+        internal async global::System.Threading.Tasks.Task VirtualMachinesRestrictMovement_Call(global::System.Net.Http.HttpRequestMessage request, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.ISendAsync sender)
         {
             using( NoSynchronizationContext )
             {
@@ -23009,6 +23030,12 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.VMware
 
                     switch ( _response.StatusCode )
                     {
+                        case global::System.Net.HttpStatusCode.OK:
+                        {
+                            await eventListener.Signal(Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.Events.BeforeResponseDispatch, _response); if( eventListener.Token.IsCancellationRequested ) { return; }
+                            await onOk(_response);
+                            break;
+                        }
                         default:
                         {
                             await eventListener.Signal(Microsoft.Azure.PowerShell.Cmdlets.VMware.Runtime.Events.BeforeResponseDispatch, _response); if( eventListener.Token.IsCancellationRequested ) { return; }

@@ -1,6 +1,6 @@
 ---
 Module Name: Az.ManagedNetworkFabric
-Module Guid: 95e96bd7-4548-4973-a345-3f982b13f681
+Module Guid: 49116437-4db3-40c5-bb2d-31a73e52d9d3
 Download Help Link: https://learn.microsoft.com/powershell/module/az.managednetworkfabric
 Help Version: 1.0.0.0
 Locale: en-US
