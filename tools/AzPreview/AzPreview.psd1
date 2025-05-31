@@ -12,7 +12,7 @@
 # RootModule = ''
 
 # Version number of this module.
-ModuleVersion = '14.1.0'
+ModuleVersion = '14.2.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -85,7 +85,7 @@ RequiredModules = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '5.0.2'; },
             @{ModuleName = 'Az.CloudService'; RequiredVersion = '2.1.0'; }, 
             @{ModuleName = 'Az.CognitiveServices'; RequiredVersion = '1.16.0'; }, 
             @{ModuleName = 'Az.Communication'; RequiredVersion = '0.6.0'; }, 
-            @{ModuleName = 'Az.Compute'; RequiredVersion = '10.0.1'; }, 
+            @{ModuleName = 'Az.Compute'; RequiredVersion = '10.0.2'; }, 
             @{ModuleName = 'Az.ComputeFleet'; RequiredVersion = '0.1.1'; }, 
             @{ModuleName = 'Az.ComputeSchedule'; RequiredVersion = '0.1.1'; }, 
             @{ModuleName = 'Az.ConfidentialLedger'; RequiredVersion = '1.1.0'; }, 
@@ -214,7 +214,7 @@ RequiredModules = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '5.0.2'; },
             @{ModuleName = 'Az.Search'; RequiredVersion = '0.10.1'; }, 
             @{ModuleName = 'Az.Security'; RequiredVersion = '1.8.0'; }, 
             @{ModuleName = 'Az.SecurityInsights'; RequiredVersion = '3.2.0'; }, 
-            @{ModuleName = 'Az.SelfHelp'; RequiredVersion = '0.3.0'; }, 
+            @{ModuleName = 'Az.SelfHelp'; RequiredVersion = '0.3.1'; }, 
             @{ModuleName = 'Az.ServiceBus'; RequiredVersion = '4.1.1'; }, 
             @{ModuleName = 'Az.ServiceFabric'; RequiredVersion = '3.5.0'; }, 
             @{ModuleName = 'Az.ServiceLinker'; RequiredVersion = '0.3.0'; }, 
