@@ -1,3 +1,5 @@
+## 14.2.0 - June 2025
+
 ## 14.1.0 - June 2025
 #### Az.Migrate 2.8.0 
 * Added cmdlet `Get-AzMigrateServerMigrationStatus`
@@ -501,6 +503,7 @@
 #### Az.Storage 9.0.0 
 * Modified cmdlet `Start-AzStorageAccountMigration`
    - Added parameter `-Force`
+
 
 
 
