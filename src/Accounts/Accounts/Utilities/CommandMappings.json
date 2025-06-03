@@ -6098,7 +6098,12 @@
       "Remove-AzProviderHubProviderRegistration": {},
       "Remove-AzProviderHubResourceTypeRegistration": {},
       "Remove-AzProviderHubSku": {},
-      "Stop-AzProviderHubDefaultRollout": {}
+      "Stop-AzProviderHubDefaultRollout": {},
+      "Update-AzProviderHubCustomRollout": {},
+      "Update-AzProviderHubDefaultRollout": {},
+      "Update-AzProviderHubNotificationRegistration": {},
+      "Update-AzProviderHubProviderRegistration": {},
+      "Update-AzProviderHubResourceTypeRegistration": {}
     },
     "Az.Purview": {
       "Add-AzPurviewAccountRootCollectionAdmin": {},

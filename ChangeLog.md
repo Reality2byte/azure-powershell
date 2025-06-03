@@ -1,3 +1,10 @@
+## 14.2.0 - July 2025
+#### Az.Accounts 5.1.0
+* Enabled setting the authentication scope for SSH cmdlets by 'Set-AzEnvironment -SshAuthScope <String>'.
+
+#### Az.Compute 10.0.2
+* Added breaking change message for 'New-AzVM' and 'New-AzVmss' cmdlets.
+
 ## 14.1.0 - June 2025
 #### Az.Accounts 5.0.2
 * Upgrade Azure.Core to 1.45.0
