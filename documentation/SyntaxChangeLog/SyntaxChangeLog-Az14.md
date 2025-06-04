@@ -1,3 +1,14 @@
+## 14.2.0 - July 2025
+#### Az.Accounts 5.1.0 
+* Modified cmdlet `Add-AzEnvironment`
+   - Added parameter `-SshAuthScope`
+* Modified cmdlet `Set-AzEnvironment`
+   - Added parameter `-SshAuthScope`
+#### Az.Network 7.18.0 
+* Modified cmdlet `New-AzApplicationGatewayFirewallPolicyManagedRule`
+   - Added parameter `-Exception`
+* Added cmdlet `New-AzApplicationGatewayFirewallPolicyException`
+
 ## 14.1.0 - June 2025
 #### Az.Migrate 2.8.0 
 * Added cmdlet `Get-AzMigrateServerMigrationStatus`
@@ -501,6 +512,7 @@
 #### Az.Storage 9.0.0 
 * Modified cmdlet `Start-AzStorageAccountMigration`
    - Added parameter `-Force`
+
 
 
 
