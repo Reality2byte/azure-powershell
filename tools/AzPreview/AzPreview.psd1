@@ -12,7 +12,7 @@
 # RootModule = ''
 
 # Version number of this module.
-ModuleVersion = '14.1.0'
+ModuleVersion = '14.2.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -52,7 +52,7 @@ DotNetFrameworkVersion = '4.7.2'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-RequiredModules = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '5.0.2'; }, 
+RequiredModules = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '5.2.0'; }, 
             @{ModuleName = 'Az.ADDomainServices'; RequiredVersion = '0.3.0'; }, 
             @{ModuleName = 'Az.Advisor'; RequiredVersion = '2.1.0'; }, 
             @{ModuleName = 'Az.Aks'; RequiredVersion = '7.0.0'; }, 
@@ -85,7 +85,7 @@ RequiredModules = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '5.0.2'; },
             @{ModuleName = 'Az.CloudService'; RequiredVersion = '2.1.0'; }, 
             @{ModuleName = 'Az.CognitiveServices'; RequiredVersion = '1.16.0'; }, 
             @{ModuleName = 'Az.Communication'; RequiredVersion = '0.6.0'; }, 
-            @{ModuleName = 'Az.Compute'; RequiredVersion = '10.0.1'; }, 
+            @{ModuleName = 'Az.Compute'; RequiredVersion = '10.0.2'; }, 
             @{ModuleName = 'Az.ComputeFleet'; RequiredVersion = '0.1.1'; }, 
             @{ModuleName = 'Az.ComputeSchedule'; RequiredVersion = '0.1.1'; }, 
             @{ModuleName = 'Az.ConfidentialLedger'; RequiredVersion = '1.1.0'; }, 
@@ -179,7 +179,7 @@ RequiredModules = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '5.0.2'; },
             @{ModuleName = 'Az.MySql'; RequiredVersion = '1.4.0'; }, 
             @{ModuleName = 'Az.NeonPostgres'; RequiredVersion = '0.1.1'; }, 
             @{ModuleName = 'Az.NetAppFiles'; RequiredVersion = '0.24.0'; }, 
-            @{ModuleName = 'Az.Network'; RequiredVersion = '7.17.0'; }, 
+            @{ModuleName = 'Az.Network'; RequiredVersion = '7.18.0'; }, 
             @{ModuleName = 'Az.NetworkAnalytics'; RequiredVersion = '0.1.2'; }, 
             @{ModuleName = 'Az.NetworkCloud'; RequiredVersion = '1.1.0'; }, 
             @{ModuleName = 'Az.NetworkFunction'; RequiredVersion = '0.2.0'; }, 
@@ -197,7 +197,7 @@ RequiredModules = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '5.0.2'; },
             @{ModuleName = 'Az.PostgreSql'; RequiredVersion = '1.3.0'; }, 
             @{ModuleName = 'Az.PowerBIEmbedded'; RequiredVersion = '2.1.0'; }, 
             @{ModuleName = 'Az.PrivateDns'; RequiredVersion = '1.2.0'; }, 
-            @{ModuleName = 'Az.ProviderHub'; RequiredVersion = '0.3.1'; }, 
+            @{ModuleName = 'Az.ProviderHub'; RequiredVersion = '0.4.0'; }, 
             @{ModuleName = 'Az.Purview'; RequiredVersion = '0.2.2'; }, 
             @{ModuleName = 'Az.Quantum'; RequiredVersion = '0.2.0'; }, 
             @{ModuleName = 'Az.Qumulo'; RequiredVersion = '0.1.3'; }, 
@@ -214,7 +214,7 @@ RequiredModules = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '5.0.2'; },
             @{ModuleName = 'Az.Search'; RequiredVersion = '0.10.1'; }, 
             @{ModuleName = 'Az.Security'; RequiredVersion = '1.8.0'; }, 
             @{ModuleName = 'Az.SecurityInsights'; RequiredVersion = '3.2.0'; }, 
-            @{ModuleName = 'Az.SelfHelp'; RequiredVersion = '0.3.0'; }, 
+            @{ModuleName = 'Az.SelfHelp'; RequiredVersion = '0.3.1'; }, 
             @{ModuleName = 'Az.ServiceBus'; RequiredVersion = '4.1.1'; }, 
             @{ModuleName = 'Az.ServiceFabric'; RequiredVersion = '3.5.0'; }, 
             @{ModuleName = 'Az.ServiceLinker'; RequiredVersion = '0.3.0'; }, 
