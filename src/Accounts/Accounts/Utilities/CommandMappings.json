@@ -4995,6 +4995,7 @@
       "New-AzApplicationGatewayFirewallDisabledRuleGroupConfig": {},
       "New-AzApplicationGatewayFirewallExclusionConfig": {},
       "New-AzApplicationGatewayFirewallMatchVariable": {},
+      "New-AzApplicationGatewayFirewallPolicyException": {},
       "New-AzApplicationGatewayFirewallPolicy": {},
       "New-AzApplicationGatewayFirewallPolicyExclusion": {},
       "New-AzApplicationGatewayFirewallPolicyExclusionManagedRule": {},
@@ -6098,7 +6099,12 @@
       "Remove-AzProviderHubProviderRegistration": {},
       "Remove-AzProviderHubResourceTypeRegistration": {},
       "Remove-AzProviderHubSku": {},
-      "Stop-AzProviderHubDefaultRollout": {}
+      "Stop-AzProviderHubDefaultRollout": {},
+      "Update-AzProviderHubCustomRollout": {},
+      "Update-AzProviderHubDefaultRollout": {},
+      "Update-AzProviderHubNotificationRegistration": {},
+      "Update-AzProviderHubProviderRegistration": {},
+      "Update-AzProviderHubResourceTypeRegistration": {}
     },
     "Az.Purview": {
       "Add-AzPurviewAccountRootCollectionAdmin": {},
