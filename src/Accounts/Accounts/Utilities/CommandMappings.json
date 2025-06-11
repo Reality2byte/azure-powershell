@@ -2366,6 +2366,17 @@
       "Remove-AzDedicatedHsm": {},
       "Update-AzDedicatedHsm": {}
     },
+    "Az.DependencyMap": {
+      "Get-AzDependencyMap": {},
+      "Get-AzDependencyMapDiscoverySource": {},
+      "New-AzDependencyMap": {},
+      "New-AzDependencyMapDiscoverySource": {},
+      "New-AzDependencyMapOffAzureDiscoverySourceResourcePropertiesObject": {},
+      "Remove-AzDependencyMap": {},
+      "Remove-AzDependencyMapDiscoverySource": {},
+      "Update-AzDependencyMap": {},
+      "Update-AzDependencyMapDiscoverySource": {}
+    },
     "Az.DesktopVirtualization": {
       "Disconnect-AzWvdUserSession": {},
       "Expand-AzWvdMsixImage": {},
@@ -4995,6 +5006,7 @@
       "New-AzApplicationGatewayFirewallDisabledRuleGroupConfig": {},
       "New-AzApplicationGatewayFirewallExclusionConfig": {},
       "New-AzApplicationGatewayFirewallMatchVariable": {},
+      "New-AzApplicationGatewayFirewallPolicyException": {},
       "New-AzApplicationGatewayFirewallPolicy": {},
       "New-AzApplicationGatewayFirewallPolicyExclusion": {},
       "New-AzApplicationGatewayFirewallPolicyExclusionManagedRule": {},
@@ -6098,7 +6110,12 @@
       "Remove-AzProviderHubProviderRegistration": {},
       "Remove-AzProviderHubResourceTypeRegistration": {},
       "Remove-AzProviderHubSku": {},
-      "Stop-AzProviderHubDefaultRollout": {}
+      "Stop-AzProviderHubDefaultRollout": {},
+      "Update-AzProviderHubCustomRollout": {},
+      "Update-AzProviderHubDefaultRollout": {},
+      "Update-AzProviderHubNotificationRegistration": {},
+      "Update-AzProviderHubProviderRegistration": {},
+      "Update-AzProviderHubResourceTypeRegistration": {}
     },
     "Az.Purview": {
       "Add-AzPurviewAccountRootCollectionAdmin": {},
