@@ -1,6 +1,6 @@
 ---
 Module Name: Az.Reservations
-Module Guid: 2aeef1d3-a103-451c-ae76-1769e85dc1f3
+Module Guid: d74a8fc2-9a86-443d-982b-ba2867dc337c
 Download Help Link: https://learn.microsoft.com/powershell/module/az.reservations
 Help Version: 1.0.0.0
 Locale: en-US
@@ -63,5 +63,5 @@ Purchase `ReservationOrder` and purchase resource under the specified URI.
 Split a Reservation order.
 
 ### [Update-AzReservation](Update-AzReservation.md)
-update the applied scopes of the `Reservation`.
+Update the applied scopes of the `Reservation`.
 

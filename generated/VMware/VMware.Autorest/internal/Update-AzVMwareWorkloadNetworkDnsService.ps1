@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-update a WorkloadNetworkDnsService
+Update a WorkloadNetworkDnsService
 .Description
-update a WorkloadNetworkDnsService
+Update a WorkloadNetworkDnsService
 .Example
 {{ Add code here }}
 .Example
