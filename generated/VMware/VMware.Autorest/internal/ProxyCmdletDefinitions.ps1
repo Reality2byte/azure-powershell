@@ -3786,6 +3786,12 @@ param(
     # Run the command asynchronously
     ${NoWait},
 
+    [Parameter()]
+    [Microsoft.Azure.PowerShell.Cmdlets.VMware.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Returns true when the command succeeds
+    ${PassThru},
+
     [Parameter(DontShow)]
     [Microsoft.Azure.PowerShell.Cmdlets.VMware.Category('Runtime')]
     [System.Uri]
@@ -3866,9 +3872,9 @@ end {
 
 <#
 .Synopsis
-create a Addon
+Create a Addon
 .Description
-create a Addon
+Create a Addon
 .Example
 $data = New-AzVMwareAddonVrPropertyObject -VrsCount 2
 New-AzVMwareAddon -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group -Property $data
@@ -4112,9 +4118,9 @@ end {
 
 <#
 .Synopsis
-create a PrivateCloud
+Create a PrivateCloud
 .Description
-create a PrivateCloud
+Create a PrivateCloud
 .Example
 New-AzVMwarePrivateCloud -Name azps_test_cloud -ResourceGroupName azps_test_group -NetworkBlock 192.168.48.0/22 -Sku av36 -ManagementClusterSize 3 -Location australiaeast
 
@@ -4456,9 +4462,9 @@ end {
 
 <#
 .Synopsis
-create a ScriptExecution
+Create a ScriptExecution
 .Description
-create a ScriptExecution
+Create a ScriptExecution
 .Example
 {{ Add code here }}
 .Example
@@ -4755,9 +4761,9 @@ end {
 
 <#
 .Synopsis
-create a WorkloadNetworkDhcp
+Create a WorkloadNetworkDhcp
 .Description
-create a WorkloadNetworkDhcp
+Create a WorkloadNetworkDhcp
 .Example
 {{ Add code here }}
 .Example
@@ -5011,9 +5017,9 @@ end {
 
 <#
 .Synopsis
-create a WorkloadNetworkDnsService
+Create a WorkloadNetworkDnsService
 .Description
-create a WorkloadNetworkDnsService
+Create a WorkloadNetworkDnsService
 .Example
 {{ Add code here }}
 .Example
@@ -5286,9 +5292,9 @@ end {
 
 <#
 .Synopsis
-create a WorkloadNetworkDnsZone
+Create a WorkloadNetworkDnsZone
 .Description
-create a WorkloadNetworkDnsZone
+Create a WorkloadNetworkDnsZone
 .Example
 {{ Add code here }}
 .Example
@@ -5561,9 +5567,9 @@ end {
 
 <#
 .Synopsis
-create a WorkloadNetworkPortMirroring
+Create a WorkloadNetworkPortMirroring
 .Description
-create a WorkloadNetworkPortMirroring
+Create a WorkloadNetworkPortMirroring
 .Example
 {{ Add code here }}
 .Example
@@ -5829,9 +5835,9 @@ end {
 
 <#
 .Synopsis
-create a WorkloadNetworkPublicIP
+Create a WorkloadNetworkPublicIP
 .Description
-create a WorkloadNetworkPublicIP
+Create a WorkloadNetworkPublicIP
 .Example
 {{ Add code here }}
 .Example
@@ -6078,9 +6084,9 @@ end {
 
 <#
 .Synopsis
-create a WorkloadNetworkSegment
+Create a WorkloadNetworkSegment
 .Description
-create a WorkloadNetworkSegment
+Create a WorkloadNetworkSegment
 .Example
 {{ Add code here }}
 .Example
@@ -6346,9 +6352,9 @@ end {
 
 <#
 .Synopsis
-create a WorkloadNetworkVMGroup
+Create a WorkloadNetworkVMGroup
 .Description
-create a WorkloadNetworkVMGroup
+Create a WorkloadNetworkVMGroup
 .Example
 {{ Add code here }}
 .Example
@@ -8998,9 +9004,9 @@ end {
 
 <#
 .Synopsis
-update a WorkloadNetworkDhcp
+Update a WorkloadNetworkDhcp
 .Description
-update a WorkloadNetworkDhcp
+Update a WorkloadNetworkDhcp
 .Example
 {{ Add code here }}
 .Example
@@ -9254,9 +9260,9 @@ end {
 
 <#
 .Synopsis
-update a WorkloadNetworkDnsService
+Update a WorkloadNetworkDnsService
 .Description
-update a WorkloadNetworkDnsService
+Update a WorkloadNetworkDnsService
 .Example
 {{ Add code here }}
 .Example
@@ -9529,9 +9535,9 @@ end {
 
 <#
 .Synopsis
-update a WorkloadNetworkDnsZone
+Update a WorkloadNetworkDnsZone
 .Description
-update a WorkloadNetworkDnsZone
+Update a WorkloadNetworkDnsZone
 .Example
 {{ Add code here }}
 .Example
@@ -9804,9 +9810,9 @@ end {
 
 <#
 .Synopsis
-update a WorkloadNetworkPortMirroring
+Update a WorkloadNetworkPortMirroring
 .Description
-update a WorkloadNetworkPortMirroring
+Update a WorkloadNetworkPortMirroring
 .Example
 {{ Add code here }}
 .Example
@@ -10072,9 +10078,9 @@ end {
 
 <#
 .Synopsis
-update a WorkloadNetworkSegment
+Update a WorkloadNetworkSegment
 .Description
-update a WorkloadNetworkSegment
+Update a WorkloadNetworkSegment
 .Example
 {{ Add code here }}
 .Example
@@ -10340,9 +10346,9 @@ end {
 
 <#
 .Synopsis
-update a WorkloadNetworkVMGroup
+Update a WorkloadNetworkVMGroup
 .Description
-update a WorkloadNetworkVMGroup
+Update a WorkloadNetworkVMGroup
 .Example
 {{ Add code here }}
 .Example

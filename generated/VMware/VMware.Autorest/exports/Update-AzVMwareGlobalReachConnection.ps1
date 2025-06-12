@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-update a GlobalReachConnection
+Update a GlobalReachConnection
 .Description
-update a GlobalReachConnection
+Update a GlobalReachConnection
 .Example
 Update-AzVMwareGlobalReachConnection -Name azps_test_grc -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 

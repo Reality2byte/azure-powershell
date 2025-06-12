@@ -1,6 +1,6 @@
 ---
 Module Name: Az.Fleet
-Module Guid: 8d7b53b3-f39f-4f40-a64f-cb07e29ede3a
+Module Guid: ce436e57-cc64-4590-ad98-54553f959358
 Download Help Link: https://learn.microsoft.com/powershell/module/az.fleet
 Help Version: 1.0.0.0
 Locale: en-US

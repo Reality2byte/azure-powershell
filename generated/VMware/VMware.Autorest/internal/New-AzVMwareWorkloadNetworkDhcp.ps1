@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-create a WorkloadNetworkDhcp
+Create a WorkloadNetworkDhcp
 .Description
-create a WorkloadNetworkDhcp
+Create a WorkloadNetworkDhcp
 .Example
 {{ Add code here }}
 .Example

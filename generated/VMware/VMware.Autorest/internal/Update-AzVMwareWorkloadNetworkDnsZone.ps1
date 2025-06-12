@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-update a WorkloadNetworkDnsZone
+Update a WorkloadNetworkDnsZone
 .Description
-update a WorkloadNetworkDnsZone
+Update a WorkloadNetworkDnsZone
 .Example
 {{ Add code here }}
 .Example
