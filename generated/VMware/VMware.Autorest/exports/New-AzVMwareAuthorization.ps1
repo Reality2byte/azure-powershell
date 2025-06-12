@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-create a ExpressRouteAuthorization
+Create a ExpressRouteAuthorization
 .Description
-create a ExpressRouteAuthorization
+Create a ExpressRouteAuthorization
 .Example
 New-AzVMwareAuthorization -Name azps_test_authorization -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 

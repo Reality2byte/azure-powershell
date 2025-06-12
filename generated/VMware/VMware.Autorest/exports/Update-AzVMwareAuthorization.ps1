@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-update a ExpressRouteAuthorization
+Update a ExpressRouteAuthorization
 .Description
-update a ExpressRouteAuthorization
+Update a ExpressRouteAuthorization
 .Example
 Update-AzVMwareAuthorization -Name azps_test_authorization -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 
