@@ -2366,6 +2366,17 @@
       "Remove-AzDedicatedHsm": {},
       "Update-AzDedicatedHsm": {}
     },
+    "Az.DependencyMap": {
+      "Get-AzDependencyMap": {},
+      "Get-AzDependencyMapDiscoverySource": {},
+      "New-AzDependencyMap": {},
+      "New-AzDependencyMapDiscoverySource": {},
+      "New-AzDependencyMapOffAzureDiscoverySourceResourcePropertiesObject": {},
+      "Remove-AzDependencyMap": {},
+      "Remove-AzDependencyMapDiscoverySource": {},
+      "Update-AzDependencyMap": {},
+      "Update-AzDependencyMapDiscoverySource": {}
+    },
     "Az.DesktopVirtualization": {
       "Disconnect-AzWvdUserSession": {},
       "Expand-AzWvdMsixImage": {},
@@ -2634,19 +2645,17 @@
     "Az.DigitalTwins": {
       "Get-AzDigitalTwinsEndpoint": {},
       "Get-AzDigitalTwinsInstance": {},
-      "Get-AzDigitalTwinsPrivateEndpointConnection": {},
-      "Get-AzDigitalTwinsPrivateLinkResource": {},
       "Get-AzDigitalTwinsTimeSeriesDatabaseConnection": {},
       "New-AzDigitalTwinsEndpoint": {},
       "New-AzDigitalTwinsInstance": {},
-      "New-AzDigitalTwinsPrivateEndpointConnection": {},
       "New-AzDigitalTwinsTimeSeriesDatabaseConnection": {},
       "Remove-AzDigitalTwinsEndpoint": {},
       "Remove-AzDigitalTwinsInstance": {},
-      "Remove-AzDigitalTwinsPrivateEndpointConnection": {},
       "Remove-AzDigitalTwinsTimeSeriesDatabaseConnection": {},
       "Test-AzDigitalTwinsInstanceNameAvailability": {},
-      "Update-AzDigitalTwinsInstance": {}
+      "Update-AzDigitalTwinsEndpoint": {},
+      "Update-AzDigitalTwinsInstance": {},
+      "Update-AzDigitalTwinsTimeSeriesDatabaseConnection": {}
     },
     "Az.DiskPool": {
       "Get-AzDiskPool": {},
@@ -4995,6 +5004,7 @@
       "New-AzApplicationGatewayFirewallDisabledRuleGroupConfig": {},
       "New-AzApplicationGatewayFirewallExclusionConfig": {},
       "New-AzApplicationGatewayFirewallMatchVariable": {},
+      "New-AzApplicationGatewayFirewallPolicyException": {},
       "New-AzApplicationGatewayFirewallPolicy": {},
       "New-AzApplicationGatewayFirewallPolicyExclusion": {},
       "New-AzApplicationGatewayFirewallPolicyExclusionManagedRule": {},
@@ -6098,7 +6108,12 @@
       "Remove-AzProviderHubProviderRegistration": {},
       "Remove-AzProviderHubResourceTypeRegistration": {},
       "Remove-AzProviderHubSku": {},
-      "Stop-AzProviderHubDefaultRollout": {}
+      "Stop-AzProviderHubDefaultRollout": {},
+      "Update-AzProviderHubCustomRollout": {},
+      "Update-AzProviderHubDefaultRollout": {},
+      "Update-AzProviderHubNotificationRegistration": {},
+      "Update-AzProviderHubProviderRegistration": {},
+      "Update-AzProviderHubResourceTypeRegistration": {}
     },
     "Az.Purview": {
       "Add-AzPurviewAccountRootCollectionAdmin": {},
@@ -6215,7 +6230,14 @@
       "Start-AzPurviewScanResultScan": {},
       "Stop-AzPurviewScanResultScan": {},
       "Test-AzPurviewAccountNameAvailability": {},
-      "Update-AzPurviewAccount": {}
+      "Update-AzPurviewAccount": {},
+      "Update-AzPurviewClassificationRule": {},
+      "Update-AzPurviewDataSource": {},
+      "Update-AzPurviewFilter": {},
+      "Update-AzPurviewKeyVaultConnection": {},
+      "Update-AzPurviewScan": {},
+      "Update-AzPurviewScanRuleset": {},
+      "Update-AzPurviewTrigger": {}
     },
     "Az.Quantum": {
       "Get-AzQuantumOffering": {},
