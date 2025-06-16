@@ -1,6 +1,6 @@
 ---
 Module Name: Az.GraphServices
-Module Guid: 48f1f0e6-4d7a-456b-8027-82676bc09900
+Module Guid: 10202a88-0266-46da-9749-1a7432d62f3b
 Download Help Link: https://learn.microsoft.com/powershell/module/az.graphservices
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,11 +15,11 @@ Microsoft Azure PowerShell: GraphServices cmdlets
 Returns account resource for a given name.
 
 ### [New-AzGraphServicesAccount](New-AzGraphServicesAccount.md)
-create account resource.
+Create account resource.
 
 ### [Remove-AzGraphServicesAccount](Remove-AzGraphServicesAccount.md)
 Deletes a account resource.
 
 ### [Update-AzGraphServicesAccount](Update-AzGraphServicesAccount.md)
-update account details.
+Update account details.
 

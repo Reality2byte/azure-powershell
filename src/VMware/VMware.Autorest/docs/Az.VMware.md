@@ -1,6 +1,6 @@
 ---
 Module Name: Az.VMware
-Module Guid: 03b1bace-0c6d-4ffc-9019-6af02c2b4b87
+Module Guid: 5c0aa642-8da0-4057-acbc-81f5f5885e5d
 Download Help Link: https://learn.microsoft.com/powershell/module/az.vmware
 Help Version: 1.0.0.0
 Locale: en-US
@@ -57,25 +57,25 @@ Create an in-memory object for AddonSrmProperties.
 Create an in-memory object for AddonVrProperties.
 
 ### [New-AzVMwareAuthorization](New-AzVMwareAuthorization.md)
-create a ExpressRouteAuthorization
+Create a ExpressRouteAuthorization
 
 ### [New-AzVMwareCloudLink](New-AzVMwareCloudLink.md)
-create a CloudLink
+Create a CloudLink
 
 ### [New-AzVMwareCluster](New-AzVMwareCluster.md)
-create a Cluster
+Create a Cluster
 
 ### [New-AzVMwareDatastore](New-AzVMwareDatastore.md)
-create a Datastore
+Create a Datastore
 
 ### [New-AzVMwareGlobalReachConnection](New-AzVMwareGlobalReachConnection.md)
-create a GlobalReachConnection
+Create a GlobalReachConnection
 
 ### [New-AzVMwareIscsiPath](New-AzVMwareIscsiPath.md)
-create a IscsiPath
+Create a IscsiPath
 
 ### [New-AzVMwarePlacementPolicy](New-AzVMwarePlacementPolicy.md)
-create a PlacementPolicy
+Create a PlacementPolicy
 
 ### [New-AzVMwarePrivateCloud](New-AzVMwarePrivateCloud.md)
 Create a private cloud
@@ -135,26 +135,26 @@ Return quota for subscription by region
 Return trial status for subscription by region
 
 ### [Update-AzVMwareAuthorization](Update-AzVMwareAuthorization.md)
-update a ExpressRouteAuthorization
+Update a ExpressRouteAuthorization
 
 ### [Update-AzVMwareCloudLink](Update-AzVMwareCloudLink.md)
-update a CloudLink
+Update a CloudLink
 
 ### [Update-AzVMwareCluster](Update-AzVMwareCluster.md)
-update a Cluster
+Update a Cluster
 
 ### [Update-AzVMwareDatastore](Update-AzVMwareDatastore.md)
-update a Datastore
+Update a Datastore
 
 ### [Update-AzVMwareGlobalReachConnection](Update-AzVMwareGlobalReachConnection.md)
-update a GlobalReachConnection
+Update a GlobalReachConnection
 
 ### [Update-AzVMwareIscsiPath](Update-AzVMwareIscsiPath.md)
-update a IscsiPath
+Update a IscsiPath
 
 ### [Update-AzVMwarePlacementPolicy](Update-AzVMwarePlacementPolicy.md)
-update a PlacementPolicy
+Update a PlacementPolicy
 
 ### [Update-AzVMwarePrivateCloud](Update-AzVMwarePrivateCloud.md)
-update a PrivateCloud
+Update a PrivateCloud
 
