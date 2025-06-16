@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-create a PlacementPolicy
+Create a PlacementPolicy
 .Description
-create a PlacementPolicy
+Create a PlacementPolicy
 .Example
 $abc = New-AzVMwareVMPlacementPolicyPropertyObject -AffinityType 'Affinity' -VMMember @{"test"="test"}
 New-AzVMwarePlacementPolicy -ClusterName cluster1 -Name policy1 -PrivateCloudName cloud1 -ResourceGroupName group1 -Property $abc

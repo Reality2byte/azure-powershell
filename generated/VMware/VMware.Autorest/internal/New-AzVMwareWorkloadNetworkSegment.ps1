@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-create a WorkloadNetworkSegment
+Create a WorkloadNetworkSegment
 .Description
-create a WorkloadNetworkSegment
+Create a WorkloadNetworkSegment
 .Example
 {{ Add code here }}
 .Example

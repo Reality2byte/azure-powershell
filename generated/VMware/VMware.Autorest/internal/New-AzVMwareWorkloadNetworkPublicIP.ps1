@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-create a WorkloadNetworkPublicIP
+Create a WorkloadNetworkPublicIP
 .Description
-create a WorkloadNetworkPublicIP
+Create a WorkloadNetworkPublicIP
 .Example
 {{ Add code here }}
 .Example

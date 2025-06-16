@@ -1,6 +1,6 @@
 ---
 Module Name: Az.MonitoringSolutions
-Module Guid: a1bb7fa0-c386-4a56-a152-18e635e436e2
+Module Guid: 448467c4-5701-4bc2-9eb0-4181d28a552c
 Download Help Link: https://learn.microsoft.com/powershell/module/az.monitoringsolutions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -21,5 +21,5 @@ Creates a log analytics solution.
 Deletes the solution in the subscription.
 
 ### [Update-AzMonitorLogAnalyticsSolution](Update-AzMonitorLogAnalyticsSolution.md)
-update the tags of a solution.
+Update the tags of a solution.
 

@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-update a WorkloadNetworkSegment
+Update a WorkloadNetworkSegment
 .Description
-update a WorkloadNetworkSegment
+Update a WorkloadNetworkSegment
 .Example
 {{ Add code here }}
 .Example
