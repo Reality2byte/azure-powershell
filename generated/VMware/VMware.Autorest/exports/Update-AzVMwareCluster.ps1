@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-update a Cluster
+Update a Cluster
 .Description
-update a Cluster
+Update a Cluster
 .Example
 Update-AzVMwareCluster -Name azps_test_cluster -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group -ClusterSize 4
 .Example

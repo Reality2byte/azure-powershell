@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-create a WorkloadNetworkVMGroup
+Create a WorkloadNetworkVMGroup
 .Description
-create a WorkloadNetworkVMGroup
+Create a WorkloadNetworkVMGroup
 .Example
 {{ Add code here }}
 .Example

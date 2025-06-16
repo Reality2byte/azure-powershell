@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-create a IscsiPath
+Create a IscsiPath
 .Description
-create a IscsiPath
+Create a IscsiPath
 .Example
 New-AzVMwareIscsiPath -PrivateCloudName azps_test_cloud -ResourceGroupName azps_test_group
 

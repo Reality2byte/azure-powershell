@@ -1,6 +1,6 @@
 ---
 Module Name: Az.CostManagement
-Module Guid: 357ea1ef-9042-434d-8155-d0ed25190a96
+Module Guid: a8f985f2-45e9-40c3-83ab-39cc5f9e182f
 Download Help Link: https://learn.microsoft.com/powershell/module/az.costmanagement
 Help Version: 1.0.0.0
 Locale: en-US

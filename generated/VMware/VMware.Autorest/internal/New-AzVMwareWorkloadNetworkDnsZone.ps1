@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-create a WorkloadNetworkDnsZone
+Create a WorkloadNetworkDnsZone
 .Description
-create a WorkloadNetworkDnsZone
+Create a WorkloadNetworkDnsZone
 .Example
 {{ Add code here }}
 .Example
