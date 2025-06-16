@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-AzVMwareDatastore
 
 ## SYNOPSIS
-create a Datastore
+Create a Datastore
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ New-AzVMwareDatastore -ClusterName <String> -Name <String> -PrivateCloudInputObj
 ```
 
 ## DESCRIPTION
-create a Datastore
+Create a Datastore
 
 ## EXAMPLES
 

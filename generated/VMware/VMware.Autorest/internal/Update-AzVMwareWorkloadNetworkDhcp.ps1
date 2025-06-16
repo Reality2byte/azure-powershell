@@ -16,9 +16,9 @@
 
 <#
 .Synopsis
-update a WorkloadNetworkDhcp
+Update a WorkloadNetworkDhcp
 .Description
-update a WorkloadNetworkDhcp
+Update a WorkloadNetworkDhcp
 .Example
 {{ Add code here }}
 .Example

@@ -1,6 +1,6 @@
 ---
 Module Name: Az.MixedReality
-Module Guid: 3ac1ba4c-b0f6-4154-a2e7-b5839f8b5e95
+Module Guid: 96071e8e-bb3a-4e6b-b730-7bb96482c1c1
 Download Help Link: https://learn.microsoft.com/powershell/module/az.mixedreality
 Help Version: 1.0.0.0
 Locale: en-US
